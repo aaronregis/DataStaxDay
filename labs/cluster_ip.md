@@ -25,12 +25,12 @@ etc.
 e.g.
 
 OpsCenter login page
-http://54.154.199.229:8888/
+http://54.229.55.89:8888
 
 Solr admin page
-http://54.154.199.229:8983/solr
+http://54.229.55.89:8983/solr
 
 Spark admin page
-http://54.154.199.229:7080
+http://54.229.55.89:7080
 
 **[Back to Agenda](./../README.md)**
