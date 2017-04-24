@@ -149,7 +149,7 @@ cassandra-stress user profile=/root/casstress-sales.yaml ops\(insert=3,read1=1\)
 
 ![](./img/lab2-5casstress.png)
 
-Now you can start monitoring your cluster via OpsCenter: http://54.194.43.170:8888/opscenter/
+Now you can start monitoring your cluster via OpsCenter: http://54.229.55.89:8888/opscenter/index.html
 
 ![](./img/lab2-6opscenter.png)
 
