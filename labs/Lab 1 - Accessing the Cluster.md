@@ -42,7 +42,7 @@ dsetool ring
 
 Each node should say the words "Search" and "Analytics" and the Graph's column has the value "yes". If any of them don't, you may have to SSH back into that node and ensure the new configuration is set.
 
-Note that one of the nodes says "(JT)"  This is your Spark job track.  You can view a webpage with information about Spark jobs by opening a web browser to port 7080 on that node.  For this cluster that is at http://13.75.93.215:7080 .  Note your URL will be different.
+Note that one of the nodes says "(SM)"  This is your Spark master.  You can view a webpage with information about Spark jobs by opening a web browser to port 7080 on that node.  For this cluster that is at http://13.75.93.215:7080 .  Note your URL will be different.
 
 ![](./img/lab1-9sparkjt_v502.png)
 
