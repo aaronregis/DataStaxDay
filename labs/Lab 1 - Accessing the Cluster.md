@@ -19,7 +19,7 @@ If you are on a Mac, you already have SSH installed in your terminal.  If you ar
 For this cluster, the username is root.  So, in the terminal I can ssh to the node by running the command:
 
 ```
-ssh root@54.186.100.184
+ssh ds_user@54.186.100.184
 ```
 
 You may be prompted to accept the node's key.  If so, type "yes" and hit enter.
