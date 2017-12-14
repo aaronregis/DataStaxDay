@@ -13,7 +13,7 @@ To start the cqlsh client run the command:
 ```
 # use the specific connected node name or `hostname -I`
 
-cqlsh node0
+cqlsh dc0vm1
 ```
 
 ![](./img/lab2-1cqlsh.png )
@@ -22,7 +22,7 @@ Let's make our first Cassandra Keyspace! If you are using uppercase letters, use
 
 ```
 
-CREATE KEYSPACE <Enter your firstname/name> WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1': 3 };
+CREATE KEYSPACE <Enter your firstname/name> WITH replication = {'class': 'NetworkTopologyStrategy', 'DC0': 3 };
 
 ```
 
@@ -91,7 +91,7 @@ keyspace: <yourkeyspace>
 
 # The CQL for creating a keyspace (optional if it already exists)
 keyspace_definition: |
-  CREATE KEYSPACE retailer WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1': 3};
+  CREATE KEYSPACE retailer WITH replication = {'class': 'NetworkTopologyStrategy', 'DC0': 3};
 
 # Table name
 table: sales
