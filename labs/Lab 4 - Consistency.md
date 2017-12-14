@@ -37,7 +37,7 @@ In the node ring view you should now see one node down.
 At a command prompt on a node that is still running start cqlsh by running the command:
 
 ```
-cqlsh node0
+cqlsh dc0vm1
 ```
 
 ![](./img/lab2-1cqlsh.png)
