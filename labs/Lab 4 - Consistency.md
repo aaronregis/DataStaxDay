@@ -40,7 +40,7 @@ At a command prompt on a node that is still running start cqlsh by running the c
 cqlsh node0
 ```
 
-![](./img/lab2-7cqlsh.png)
+![](./img/lab2-1cqlsh.png)
 
 Now, in the cqlsh, run the commands:
 
