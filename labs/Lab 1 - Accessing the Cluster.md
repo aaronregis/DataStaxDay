@@ -16,7 +16,7 @@ We're now going to SSH into each node and modify a configuration file.  You will
 
 If you are on a Mac, you already have SSH installed in your terminal.  If you are on Windows, you may need to install an SSH client.  A popular SSH client is Putty.  Putty can be downloaded from [http://www.putty.org](http://www.putty.org).
 
-For this cluster, the username is root.  So, in the terminal I can ssh to the node by running the command:
+For this cluster, the username is ds_user.  So, in the terminal I can ssh to the node by running the command:
 
 ```
 ssh ds_user@54.186.100.184
