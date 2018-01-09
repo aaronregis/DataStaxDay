@@ -17,7 +17,7 @@ dsetool create_core retailer.sales generateResources=true reindex=true
 
 If you've ever created your own Solr cluster, you know you need to create the core and upload a schema and config.xml. That generateResources tag does that for you. For production use, you'll want to take the resources and edit them to your needs but it does save you a few steps.
 
-Now for that description of the dsetool. Use the dsetool utility for creating system keys, encrypting sensitive configuration, and performing Cassandra File System (CFS) and Hadoop-related tasks, such as checking the CFS, and listing node subranges of data in a keyspace.
+Now for that description of the dsetool. dsetool is a command line interface for DSE operations. For example, use the dsetool utility for creating system keys, encrypting sensitive configuration and listing node subranges of data in a keyspace and much more.
 
 This by default will map Cassandra types to Solr types for you. Anyone familiar with Solr knows that there's a REST API for querying data. In DSE Search, we embed that into CQL so you can take advantage of all the goodness CQL brings. Let's give it a shot.  Inside a cqlsh run the command:
 
