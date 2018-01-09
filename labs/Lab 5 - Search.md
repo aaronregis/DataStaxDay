@@ -33,7 +33,7 @@ SELECT * FROM retailer.sales WHERE solr_query='{"q":"name:gregg", "fq":"item:*ic
 
 ![](./img/lab5-3solrselect.png)
 
-For your reference, here's the doc that shows some of things you can do: http://docs.datastax.com/en/latest-dse/datastax_enterprise/srch/queriesCql.html
+For your reference, here's the doc that shows some of things you can do: http://docs.datastax.com/en/dse/5.1/dse-admin/datastax_enterprise/search/siQueryTOC.html
 
 ## Retail Book Workshop
 
@@ -87,7 +87,7 @@ Now we need to load the data and create our Solr cores.
 
 ```
 
-git clone https://github.com/norim/DataStaxDay
+git clone https://github.com/aaronregis/DataStaxDay
 cd DataStaxDay/data
 
 ```
