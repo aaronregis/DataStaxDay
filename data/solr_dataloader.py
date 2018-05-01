@@ -14,6 +14,7 @@ from itertools import chain
 from datetime import date, timedelta, datetime
 
 from cassandra.cluster import Cluster
+from cassandra.auth import PlainTextAuthProvider
 
 KEYSPACE = sys.argv[1]
 META_COLUMN_FAMILY = "metadata"
@@ -182,7 +183,8 @@ def load_geo_data(session, geopath):
 if __name__ == '__main__':
     meta_path = 'metadata.json'
     geo_path = 'geodata.csv'
-    cluster = Cluster(['node0','node1','node2'])
+    auth_provider = PlainTextAuthProvider(username='cassandra', password='Password1234')
+    cluster = Cluster(['dc0vm0','dc0vm1','dc0vm2'],auth_provider=auth_provider)
     session = cluster.connect()
     session.execute(META_CF_DROP_STATEMENT)
     session.execute(RANK_CF_DROP_STATEMENT)
