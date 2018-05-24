@@ -32,3 +32,7 @@ Spark admin page
 http://40.117.159.199:7080
 
 **[Back to Agenda](./../README.md)**
+
+insert:
+  partitions: fixed(10)
+  batchtype: UNLOGGED 
