@@ -7,15 +7,13 @@
 
 DSE Search is awesome. You can configure which columns of which Cassandra tables you'd like indexed in Lucene format to make extended searches more efficient while enabling features such as text search and geospatial search.
 
-Let's start off by indexing the tables we've already made. Here's where the dsetool really comes in handy.  From the command line on one of your nodes run:
+Let's start off by indexing the tables we've already made. Here's where the CQL really comes in handy.  From the cqlsh shell on one of your nodes run:
 
 ```
 CREATE SEARCH INDEX ON retailer.sales WITH COLUMNS * { docValues:true }  AND OPTIONS { reindex:true } 
 ```
 
-![](./img/lab5-1makecore.png)
-
-If you've ever created your own Solr cluster, you know you need to create the core and upload a schema and config.xml. That generateResources tag does that for you. For production use, you'll want to take the resources and edit them to your needs but it does save you a few steps.
+If you've ever created your own Solr cluster, you know you need to create the core and upload a schema and config.xml. This CREATE SEARCH INDEX command does this for you. For production use, you'll want to specify each column and edit the command to your needs.
 
 Now for that description of the dsetool. dsetool is a command line interface for DSE operations. For example, use the dsetool utility for creating system keys, encrypting sensitive configuration and listing node subranges of data in a keyspace and much more.
 
