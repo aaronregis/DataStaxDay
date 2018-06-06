@@ -22,7 +22,7 @@ Let's make our first Cassandra Keyspace! If you are using uppercase letters, use
 
 ```
 
-CREATE KEYSPACE <Enter your firstname/name> WITH replication = {'class': 'NetworkTopologyStrategy', 'DC0': 3 };
+CREATE KEYSPACE <Enter your firstname/name> WITH replication = {'class': 'NetworkTopologyStrategy', 'dc0': 3 };
 
 ```
 
