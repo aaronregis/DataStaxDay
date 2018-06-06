@@ -10,7 +10,7 @@ DSE Search is awesome. You can configure which columns of which Cassandra tables
 Let's start off by indexing the tables we've already made. Here's where the dsetool really comes in handy.  From the command line on one of your nodes run:
 
 ```
-dsetool create_core retailer.sales generateResources=true reindex=true
+CREATE SEARCH INDEX ON retailer.sales WITH COLUMNS * { docValues:true }  AND OPTIONS { reindex:true } 
 ```
 
 ![](./img/lab5-1makecore.png)
