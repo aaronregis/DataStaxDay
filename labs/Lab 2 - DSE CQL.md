@@ -13,7 +13,7 @@ To start the cqlsh client run the command:
 ```
 # use the specific connected node name or `hostname -I`
 
-cqlsh dc0vm1
+cqlsh node0|node1|node2
 ```
 
 ![](./img/lab2-1cqlsh.png )
@@ -22,7 +22,7 @@ Let's make our first Cassandra Keyspace! If you are using uppercase letters, use
 
 ```
 
-CREATE KEYSPACE <Enter your firstname/name> WITH replication = {'class': 'NetworkTopologyStrategy', 'dc0': 3 };
+CREATE KEYSPACE <Enter your firstname/name> WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1': 3 };
 
 ```
 
@@ -136,6 +136,10 @@ queries:
    read1:
     cql: SELECT * FROM sales WHERE name = ? AND dt >= ? AND dt <= ?
     fields: samerow
+    
+insert:
+  partitions: fixed(10)
+  batchtype: UNLOGGED
 ```
 
 To start cassandra-stress you can use the following command:  
@@ -143,7 +147,7 @@ To start cassandra-stress you can use the following command:
 
 ```   
 
-cassandra-stress user profile=/root/casstress-sales.yaml ops\(insert=3,read1=1\) no-warmup cl=QUORUM -node 172.31.22.179
+cassandra-stress user profile=casstress-sales.yaml ops\(insert=3,read1=1\) no-warmup cl=QUORUM -node 172.31.22.179
 
 ```
 
