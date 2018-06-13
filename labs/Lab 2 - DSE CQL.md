@@ -91,7 +91,7 @@ keyspace: <yourkeyspace>
 
 # The CQL for creating a keyspace (optional if it already exists)
 keyspace_definition: |
-  CREATE KEYSPACE retailer WITH replication = {'class': 'NetworkTopologyStrategy', 'DC0': 3};
+  CREATE KEYSPACE retailer WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1': 3};
 
 # Table name
 table: sales
