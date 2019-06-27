@@ -193,7 +193,7 @@ SELECT asin, title, categories, price   FROM retailer.metadata  WHERE solr_query
 
 **Fun all in one**
 ```
-SELECT asin, title, categories, price   FROM retailer.metadata WHERE solr_query='{"q":"*:*", "facet":{"field":"categories"}, "fq":"{!join from=asin to=asin force=true fromIndex=retailer.clicks}area_code:415"}' limit 5;
+SELECT asin, title, categories, price   FROM retailer.metadata WHERE solr_query='{"q":"*:*", "facet":{"field":"categories"}, "fq":"{!join from=asin to=asin force=true fromIndex=retailer.clicks}area_code:415", "useFieldCache":true}' limit 5;
 ```
 
 Want to see a really cool example of a live DSE Search app? Check out [KillrVideo](http://www.killrvideo.com/) and its [Git](https://github.com/luketillman/killrvideo-csharp) to see it in action.
