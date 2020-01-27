@@ -28,13 +28,13 @@ e.g.
 For Cluster 1,
 
 OpsCenter login page
-http://52.54.154.84:8888
+http://54.82.20.2:8888
 
 Solr admin page
-http://52.54.154.84:8983/solr
+http://18.234.174.128:8983/solr
 
 Spark admin page
-http://54.205.61.148:7080
+http://18.234.174.128:7080
 
 **[Back to Agenda](./../README.md)**
 
