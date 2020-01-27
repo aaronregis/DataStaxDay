@@ -29,3 +29,6 @@ Here's our agenda for today:
 * Analytics
     * Lecture - Analytics
     * [Lab 6 - DSE Analytics](./labs/Lab%206%20-%20Analytics.md)  
+
+* Graph
+    * Lecture - Graph
